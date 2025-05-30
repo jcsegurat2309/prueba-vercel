@@ -1,0 +1,28 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "name": "Marketplace",
+      "title": "El mejor precio para CDMX.",
+      "description": "Conoce ahora mismo nuestro catálogo y recibe el mismo día (CDMX y área metropolitana).",
+      "imagen": "/icons/market.png", 
+      "url": "https://www.facebook.com/marketplace/profile/100034952348462/"
+    },
+    {
+        "id": 2,
+        "name": "Tienda_en_línea",
+        "title": "Tienda en línea.",
+        "description": "Compra ahora desde cualquier parte de México. Contamos con distintas opciones de envío seguro.",
+        "imagen": "/icons/Tu_siguiente_compra.svg",
+        "url": "https://tusiguientecompra.com/"
+    },
+    {
+      "id": 3,
+      "name": "Mercado_libre",
+      "title": "Página de MercadoLibre",
+      "imagen": "/icons/editado.png",
+      "description": "Compra a través de MercadoLibre Obtén beneficios como meses sin intereses. (Envíos a todo México).",
+      "url": "https://listado.mercadolibre.com.mx/pagina/tusiguientecompra/"
+    }
+  ]
+}
