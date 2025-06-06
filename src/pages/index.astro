@@ -36,7 +36,7 @@ import CardQR from "../components/CardQR.jsx";
           {
             links.map((link) => {
               if (link.id == 4) {
-                return <CardQR title={link.title} description={link.description} client:only="react" />;
+                return <CardQR title={link.title} description={link.description} link={link.url} client:only="react" />;
               } else {
                 return <Link clase="h-14" id={link.id} key={link.id} title={link.title} description={link.description} imagen={link.imagen} url={link.url} />;
               }
