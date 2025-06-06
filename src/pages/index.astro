@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Link from "../components/Link.astro";
 import { links } from "../data/links.json";
+import CardQR from "../components/CardQR.jsx";
 ---
 
 <!doctype html>
@@ -32,7 +33,13 @@ import { links } from "../data/links.json";
         <!-- Enlaces -->
         <!-- Tu siguiente compra -->
         <div class="space-y-4">
-          {links.map((link) => <Link key={link.id} title={link.title} description={link.description} imagen={link.imagen} url={link.url} />)}
+          {links.map((link) => {
+            if (link.id == 4) {
+              return <CardQR title={link.title} description={link.description} />
+            }else{
+              return <Link clase="h-14" id={link.id} key={link.id} title={link.title} description={link.description} imagen={link.imagen} url={link.url} />
+            }
+          })}
         </div>
       </div>
     </div>

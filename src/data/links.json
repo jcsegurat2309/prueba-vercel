@@ -23,6 +23,14 @@
       "imagen": "/icons/editado.png",
       "description": "Compra a través de MercadoLibre Obtén beneficios como meses sin intereses. (Envíos a todo México).",
       "url": "https://listado.mercadolibre.com.mx/pagina/tusiguientecompra/"
+    },
+    {
+      "id": 4,
+      "name": "Whatsapp",
+      "title": "Unete a nuestro grupo de Whatsapp",
+      "imagen": "/icons/wa_icon_white.png",
+      "description": "¡Únete a nuestro grupo de WhatsApp y recibe ofertas exclusivas y novedades antes que nadie! 🚀",
+      "url": ""
     }
   ]
 }

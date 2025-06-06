@@ -1,5 +1,5 @@
 ---
-const { title, description, url, imagen } = Astro.props;
+const { title, description, url, imagen, clase, id } = Astro.props;
 ---
 
 <a
@@ -12,5 +12,5 @@ const { title, description, url, imagen } = Astro.props;
     <h2 class="text-xl font-semibold text-gray-800 mb-1">{title}</h2>
     <p class="text-sm text-gray-800">{description}</p>
   </div>
-  <img src={imagen} alt="Logo Tu siguiente compra" class="h-12 w-auto mt-4 sm:mt-0 sm:ml-4 rounded" loading="lazy" />
+  <img src={imagen} alt="Logo" id={id} class={`h-12 w-auto mt-4 sm:mt-0 sm:ml-4 rounded ${clase}`} loading="lazy" />
 </a>
