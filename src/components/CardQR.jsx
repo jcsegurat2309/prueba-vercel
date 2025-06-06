@@ -5,9 +5,14 @@ export default function CardQR({ title, description }) {
     const [movilOTablet, setMovilOTablet] = useState(false);
 
     useEffect(() => {
-        const parser = new UAParser();
+        const parser = new UAParser.UAParser();
         const deviceType = parser.getDevice().type;
-        if (deviceType === 'mobile' || deviceType === 'tablet') {
+        // Fallback manual si la librería no detecta el tipo
+        if (
+            deviceType === 'mobile' ||
+            deviceType === 'tablet' ||
+            /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile|tablet|kindle|silk|fennec|windows phone|maemo|symbian/i.test(navigator.userAgent)
+        ) {
             setMovilOTablet(true);
         }
     }, []);
