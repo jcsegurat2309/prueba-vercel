@@ -20,7 +20,7 @@ export default function CardQR({ title, description }) {
     }, []);
 
     return (
-        <div className="p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-[#EC651B] flex flex-col items-center justify-center w-full group">
+        <div className={`p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-[#EC651B] flex ${movilOTablet ? 'flex-row' : 'flex-col'} items-center justify-center w-full group`}>
             <p>{movilOTablet ? "Móvil o Tableta" : "PC"}</p>
             <p>userAgent: {userAgent}</p>
             <div className="flex-1 text-center sm:text-left">
