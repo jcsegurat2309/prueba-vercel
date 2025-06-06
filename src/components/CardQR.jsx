@@ -20,7 +20,7 @@ export default function CardQR({ title, description, link }) {
     }, []);
 
     return (
-        <a href={link} className={`p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-[#EC651B] flex ${movilOTablet ? 'flex-row' : 'flex-col'} items-center justify-center w-full group`}>
+        <a href={link} className={`p-4 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-[#EC651B] flex ${movilOTablet ? 'flex-row' : 'flex-col'}  sm:flex-row  items-center justify-center w-full group`}>
             <div className="flex-1 text-center sm:text-left">
                 <h2 className="text-xl font-semibold text-gray-800 mb-1">{title}</h2>
                 <p className="text-sm text-gray-800">{description}</p>
@@ -36,7 +36,7 @@ export default function CardQR({ title, description, link }) {
                 <img
                     src="./icons/wa_icon_white.png"
                     alt="Logo"
-                    className="h-12 w-auto mt-4 sm:mt-0 sm:ml-4 rounded"
+                    className="h-12 sm:h-20 w-auto mt-4 sm:mt-0 sm:ml-4 rounded"
                     loading="lazy"
                 />
             )}
